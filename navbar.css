@@ -1,3 +1,5 @@
+
+
 body {
     background-color: #941447;
     margin: 0px;
@@ -9,6 +11,7 @@ nav {
     height: 60px;
     background-color: #147a94;
     overflow: hidden;
+    padding-bottom: 06px;
 }
 
 /* Taget a specific tab */
@@ -25,12 +28,14 @@ nav a {
     font-family: 'Poiret One', cursive;
     font-weight: 300;
     transition: 0.3s;
+    border: 1px solid transparent;
 }
 
 /* pseudo-class for hover */
 nav a:hover {
     background-color:#296b7b;
-    transition: 0.2s;
+    border: 1px solid #fa834f;
+    transition: 0.75s;
 }
 
 /* Target the logo for specific styles */
@@ -45,4 +50,9 @@ nav a:hover {
 }
 
 
-    
+ 
+@media screen and (max-width: 680px) {
+    body {
+        background-color: black;
+}
+}
